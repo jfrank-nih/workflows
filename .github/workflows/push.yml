@@ -1,0 +1,11 @@
+name: Push
+
+on:
+  push:
+  
+jobs:   
+  job:
+    runs-on: self-hosted
+    steps:
+      - run: env
+      - run: echo $TESTVAR
