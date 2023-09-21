@@ -3,10 +3,12 @@ name: Push
 
 on:
   push:
-  
-jobs:   
+
+jobs:
   job:
     runs-on: self-hosted
+    container:
+      image: ubuntu:latest
     steps:
       - run: env
       - run: echo $TESTVAR
